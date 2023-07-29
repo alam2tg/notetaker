@@ -53,10 +53,14 @@ app.post("/api/notes", (req, res) => {
 			title,
 			text,
 			note_id: uuid(),
-		}
+		};
+		readAndAppend(newNote, './db/db.json');
+		res.json('Note added successfully');
+	} else {
+		res.error('Error in adding tip');
 	}
-	
 })
+
 
 //  Get route for homepage - * any 'wildcards' (non-specified-routes) will be directed to the homepage.
 
