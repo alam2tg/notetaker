@@ -3,11 +3,9 @@ const path = require("path");
 const fs = require('fs')
 const util =  require('util')
 const uuid = require('./helpers/uuid')
-const dayjs = require('dayjs')
-
 
 //setup express
-const PORT = 3100;
+const PORT = process.env.port || 3100
 const app = express();
 
 //setup express app to handle data parsing
@@ -61,13 +59,17 @@ app.post("/api/notes", (req, res) => {
 	}
 })
 
+.delete('./db/db.json/:user_id', (req, res) => {
+	const id = req.params.user_id;
+
+	db.deleteData(user_id)
+})
 
 //  Get route for homepage - * any 'wildcards' (non-specified-routes) will be directed to the homepage.
-
 app.get("*", (req, res) =>
 	res.sendFile(path.join(__dirname, "./public/index.html"))
 );
 
-app.listen(PORT, () => console.log("server is running"));
+app.listen(PORT, () => console.log(`server is running on http://localhost:${PORT}`));
 
 
