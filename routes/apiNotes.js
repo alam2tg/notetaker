@@ -1,13 +1,13 @@
 "use strict";
-const express = require("express");
-let router = express.Router();
+const apiNotes = require("express").router();
+const uuid = require('../helpers/uuid');
 
 // router.use(function(req, res, next) {
 // 	console.log(req.url, "@", Date.now());
 // 	next();
 // })
 
-router
+apiNotes
 	.route("/notes")
 	.get((req, res) => {
 		readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
@@ -28,3 +28,5 @@ router
 			res.error("Error in adding note");
 		}
 	});
+
+	//module.exports = apiNotes;

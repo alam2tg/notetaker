@@ -37,6 +37,8 @@ app.get("/notes", (req, res) =>
 	res.sendFile(path.join(__dirname, "./public/notes.html"))
 );
 
+/* */
+
 app.get("/api/notes", (req, res) => {
 	readFromFile('./db/db.json').then((data)=> res.json(JSON.parse(data)))
 });
@@ -59,10 +61,10 @@ app.post("/api/notes", (req, res) => {
 	}
 })
 
-.delete('./db/db.json/:user_id', (req, res) => {
+.delete('/api/notes/:id', (req, res) => {
 	const id = req.params.user_id;
+	id.deleteData();
 
-	db.deleteData(user_id)
 })
 
 //  Get route for homepage - * any 'wildcards' (non-specified-routes) will be directed to the homepage.
