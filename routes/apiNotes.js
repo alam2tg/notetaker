@@ -1,32 +1,34 @@
 "use strict";
-const apiNotes = require("express").router();
+const apiNotes = require("express").Router();
 const uuid = require('../helpers/uuid');
+const {readFromFile, readAndAppend} = require('../helpers/fsUtils');
 
-// router.use(function(req, res, next) {
-// 	console.log(req.url, "@", Date.now());
-// 	next();
-// })
+const dbPath = '../db/notes.json'
+// const db = require('../db/notes.json')
 
-apiNotes
-	.route("/notes")
-	.get((req, res) => {
-		readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
-	})
-	.post("/notes", (req, res) => {
-		console.info("request receieved to add note");
+//GET Route for retrieving all the feedback
+apiNotes.get('/', (req, res) => {
+	console.info(`${req.method} request received for apiNotes`)
+	readFromFile('./db/notes.json').then((data)=> res.json(JSON.parse(data)))
+});
 
-		const { title, text } = req.body;
-		if (req.body) {
-			const newNote = {
-				title,
-				text,
-				note_id: uuid(),
-			};
-			readAndAppend(newNote, "./db/db.json");
-			res.json("Note added successfully");
-		} else {
-			res.error("Error in adding note");
-		}
-	});
+//use post method to call on readAndAppend, post to db.
+apiNotes.post('/', (req, res) => {
+	console.info(`${req.method} request received to add note`);
 
-	//module.exports = apiNotes;
+	const { title, text } = req.body;
+	if (req.body) {
+		const newNote = {
+			title,
+			text,
+			note_id: uuid(),
+		};
+		readAndAppend(newNote, db);
+		res.json('Note added successfully');
+	} else {
+		res.error('Error in adding tip');
+	}
+})
+
+module.exports = apiNotes;
+

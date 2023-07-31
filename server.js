@@ -33,12 +33,17 @@ const readAndAppend = (content, file) => {
   });
 };
 
+//Route for homepage
+app.get("/", (req, res) =>
+	res.sendFile(path.join(__dirname, ".public/index.html"))
+)
+
+//Route for notes
 app.get("/notes", (req, res) =>
 	res.sendFile(path.join(__dirname, "./public/notes.html"))
 );
 
-/* */
-
+//Route for data
 app.get("/api/notes", (req, res) => {
 	readFromFile('./db/db.json').then((data)=> res.json(JSON.parse(data)))
 });
@@ -59,12 +64,6 @@ app.post("/api/notes", (req, res) => {
 	} else {
 		res.error('Error in adding tip');
 	}
-})
-
-.delete('/api/notes/:id', (req, res) => {
-	const id = req.params.user_id;
-	id.deleteData();
-
 })
 
 //  Get route for homepage - * any 'wildcards' (non-specified-routes) will be directed to the homepage.
