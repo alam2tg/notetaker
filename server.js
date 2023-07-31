@@ -22,7 +22,7 @@ const writeToFile = (destination, content) =>
   );
 
 const readAndAppend = (content, file) => {
-  fs.readFile('./db/db.json', 'utf8', (err, data) => {
+  fs.readFile('./db/notes.json', 'utf8', (err, data) => {
     if (err) {
       console.error(err);
     } else {
@@ -45,7 +45,7 @@ app.get("/notes", (req, res) =>
 
 //Route for data
 app.get("/api/notes", (req, res) => {
-	readFromFile('./db/db.json').then((data)=> res.json(JSON.parse(data)))
+	readFromFile('./db/notes.json').then((data)=> res.json(JSON.parse(data)))
 });
 
 //use post method to call on readAndAppend, post to db.

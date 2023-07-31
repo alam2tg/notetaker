@@ -30,5 +30,5 @@ apiNotes.post('/', (req, res) => {
 	}
 })
 
-module.exports = apiNotes;
+// module.exports = apiNotes;
 
