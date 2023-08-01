@@ -1,130 +1,24 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
+        "title": "Enter Note Title and Text",
+        "text": "Then press the save button"
     },
     {
-        "title": "Test 2",
-        "text": "Second time. ",
-        "note_id": "5fca"
+        "title": "Making Notes",
+        "text": "Making notes",
+        "timestamp": "Mon Jul 31 2023 18:52:39 GMT-0700 (Pacific Daylight Time)",
+        "note_id": "5818"
     },
     {
-        "title": "Test 3",
-        "text": "These notes really work!",
-        "note_id": "4f38"
+        "title": "creating ",
+        "text": "note_id",
+        "timestamp": "Mon Jul 31 2023 18:52:56 GMT-0700 (Pacific Daylight Time)",
+        "note_id": "9ba4"
     },
     {
-        "title": "Hello",
-        "text": "World",
-        "note_id": "58a7"
-    },
-    {
-        "title": "Testing",
-        "text": "now",
-        "note_id": "822b"
-    },
-    {
-        "title": "save",
-        "text": "ts",
-        "note_id": "a701"
-    },
-    {
-        "title": "save",
-        "text": "teaw",
-        "note_id": "0850"
-    },
-    {
-        "title": "will this",
-        "text": "work",
-        "note_id": "095c"
-    },
-    {
-        "title": "testtime",
-        "text": "test",
-        "note_id": "b278"
-    },
-    {
-        "title": "test",
-        "text": "time231321",
-        "timestamp": "Mon Jul 31 2023",
-        "note_id": "e7cc"
-    },
-    {
-        "title": "Date",
-        "text": "toISOString()",
-        "timestamp": "Mon Jul 31 2023",
-        "note_id": "093f"
-    },
-    {
-        "title": "Test 2 ISOString",
-        "text": "server restart",
-        "timestamp": "2023-08-01T00:47:09.238Z",
-        "note_id": "50a8"
-    },
-    {
-        "title": "setUTCDate()",
-        "text": "testtest",
-        "timestamp": null,
-        "note_id": "4bcb"
-    },
-    {
-        "title": "toUTCString()",
-        "text": "test",
-        "timestamp": "Tue, 01 Aug 2023 00:49:03 GMT",
-        "note_id": "121c"
-    },
-    {
-        "title": "toString",
-        "text": "PST",
-        "timestamp": "Tue, 01 Aug 2023 00:50:29 GMT",
-        "note_id": "14ad"
-    },
-    {
-        "title": "test response",
-        "text": "ID",
-        "timestamp": "Mon Jul 31 2023 17:56:57 GMT-0700 (Pacific Daylight Time)",
-        "note_id": "7294"
-    },
-    {
-        "title": "test",
-        "text": "test",
-        "timestamp": "Mon Jul 31 2023 17:58:01 GMT-0700 (Pacific Daylight Time)",
-        "note_id": "0cd5"
-    },
-    {
-        "title": "test",
-        "text": "test",
-        "timestamp": "Mon Jul 31 2023 17:58:38 GMT-0700 (Pacific Daylight Time)",
-        "note_id": "7e3f"
-    },
-    {
-        "title": "test",
-        "text": "test",
-        "timestamp": "Mon Jul 31 2023 17:59:41 GMT-0700 (Pacific Daylight Time)",
-        "note_id": "f164"
-    },
-    {
-        "title": "test",
-        "text": "test",
-        "timestamp": "Mon Jul 31 2023 18:00:43 GMT-0700 (Pacific Daylight Time)",
-        "note_id": "a011"
-    },
-    {
-        "title": "testing console",
-        "text": "save",
-        "timestamp": "Mon Jul 31 2023 18:07:11 GMT-0700 (Pacific Daylight Time)",
-        "note_id": "c413"
-    },
-    {
-        "title": "omg",
-        "text": "test",
-        "timestamp": "Mon Jul 31 2023 18:07:54 GMT-0700 (Pacific Daylight Time)",
-        "note_id": "1ef2"
-    },
-    {
-        "title": "last test",
-        "text": "pls",
-        "timestamp": "Mon Jul 31 2023 18:08:43 GMT-0700 (Pacific Daylight Time)",
-        "note_id": "7541"
+        "title": "reading",
+        "text": "get",
+        "timestamp": "Mon Jul 31 2023 18:53:11 GMT-0700 (Pacific Daylight Time)",
+        "note_id": "dfd4"
     }
 ]

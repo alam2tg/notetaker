@@ -17,9 +17,8 @@ apiNotes.post('/', (req, res) => {
 			title,
 			text,
 			timestamp: new Date().toString(),
-			note_id: uuid()
+			id: uuid()
 		}
-
 		readAndAppend(newNote, './db/notes.json');
 
 		const response = {
@@ -33,6 +32,12 @@ apiNotes.post('/', (req, res) => {
 		 res.json('Error in posting feedback');
 	  }
 })
+
+
+// apiNotes.delete('/', (req,res) => {
+// 	console.info(`${req.method} request received to delete note`)
+// 	if (req.body) 
+// })
 
 module.exports = apiNotes;
 

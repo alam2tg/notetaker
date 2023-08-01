@@ -76,7 +76,7 @@ const handleNoteSave = () => {
     renderActiveNote();
   });
 };
-
+//what is the objects id? data-note is class, will grab. ID = ?
 // Delete the clicked note
 const handleNoteDelete = (e) => {
   // Prevents the click listener for the list from being called when the button inside of it is clicked
@@ -86,7 +86,7 @@ const handleNoteDelete = (e) => {
   const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
 
   if (activeNote.id === noteId) {
-    activeNote = {};
+    activeNote = (`${newNote}`);
   }
 
   deleteNote(noteId).then(() => {
@@ -181,3 +181,4 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
+
