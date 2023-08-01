@@ -16,8 +16,10 @@ apiNotes.post('/', (req, res) => {
 		const newNote = {
 			title,
 			text,
-			note_id: uuid(),
-		};
+			timestamp: new Date().toString(),
+			note_id: uuid()
+		}
+
 		readAndAppend(newNote, './db/notes.json');
 
 		const response = {
@@ -26,6 +28,7 @@ apiNotes.post('/', (req, res) => {
 		 };
 	
 		 res.json(response);
+
 	  } else {
 		 res.json('Error in posting feedback');
 	  }
