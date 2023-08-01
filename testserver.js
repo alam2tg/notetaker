@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const api = require('./routes/index')
+const api = require('./routes/index.js')
 
 //setup express
 const PORT = process.env.port || 3101
@@ -22,11 +22,6 @@ app.get('/', (req,res) =>
 app.get("/notes", (req, res) =>
 	res.sendFile(path.join(__dirname, "./public/notes.html"))
 );
-
-//Route for data
-app.get("/api/notes", (req, res) => {
-	readFromFile('./db/db.json').then((data)=> res.json(JSON.parse(data)))
-});
 
 //  Get route for homepage - * any 'wildcards' (non-specified-routes) will be directed to the homepage.
 app.get("*", (req, res) =>

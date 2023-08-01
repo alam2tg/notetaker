@@ -11,7 +11,7 @@ const writeToFile = (destination, content) =>
 
 //.. -one directory up
 const readAndAppend = (content, file) => {
-	fs.readFile('../db/notes.json', 'utf8', (err, data) => {
+	fs.readFile(file, 'utf8', (err, data) => {
 		if (err) {
 			console.error(err);
 		} else {
@@ -22,4 +22,4 @@ const readAndAppend = (content, file) => {
 	});
 };
 
-// module.exports = { readFromFile, writeToFile, readAndAppend };
+module.exports = { readFromFile, writeToFile, readAndAppend };

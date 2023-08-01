@@ -1,10 +1,9 @@
 //apiNotes.js
 const express = require('express');
+const apiNotes = require('./apiNotes');
 
-const apiNotesRouter = require('./apiNotes');
+const app = express();
 
-const app = express()
+app.use('/notes', apiNotes);
 
-app.use('./apiNotes', apiNotesRouter);
-
-// module.exports = app
+module.exports = app;
