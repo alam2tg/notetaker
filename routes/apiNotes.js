@@ -34,8 +34,9 @@ apiNotes.post('/', (req, res) => {
 })
 
 
-// apiNotes.delete('/', (req,res) => {
-// 	console.info(`${req.method} request received to delete note`)
+// apiNotes.delete('/db/notes/:id', (req,res) => {
+//		delete newNote.id
+// 	res.send(`${res.method}`)
 // 	if (req.body) 
 // })
 
