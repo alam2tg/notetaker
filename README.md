@@ -26,6 +26,7 @@ This project was made to test the functionality of my express js server with mod
 ## Installation
 
 To install this project, you will need node.js and express.js. Insomnia would also be helpful to run tests on your server, but is not a requirement. First, download node.js. Then, create a package.json file, and include express as a dependency, shown below.
+[dependencies](./images/dependencies.png)
 
 ## Usage
 
