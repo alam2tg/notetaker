@@ -3,7 +3,7 @@ const path = require("path");
 const api = require('./routes/index.js')
 
 //setup express
-const PORT = process.env.PORT || 80
+const PORT = process.env.PORT || 5001
 const app = express();
 
 //setup express app to handle data parsing
