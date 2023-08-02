@@ -2,29 +2,5 @@
     {
         "title": "Enter Note Title and Text",
         "text": "Then press the save button"
-    },
-    {
-        "title": "Making Notes",
-        "text": "Making notes",
-        "timestamp": "Mon Jul 31 2023 18:52:39 GMT-0700 (Pacific Daylight Time)",
-        "id": "5818"
-    },
-    {
-        "title": "creating ",
-        "text": "id",
-        "timestamp": "Mon Jul 31 2023 18:52:56 GMT-0700 (Pacific Daylight Time)",
-        "id": "9ba4"
-    },
-    {
-        "title": "reading",
-        "text": "get",
-        "timestamp": "Mon Jul 31 2023 18:53:11 GMT-0700 (Pacific Daylight Time)",
-        "id": "dfd4"
-    },
-    {
-        "title": "test id datatype",
-        "text": "num or string",
-        "timestamp": "Tue Aug 01 2023 00:30:46 GMT-0700 (Pacific Daylight Time)",
-        "id": 83887
     }
 ]
